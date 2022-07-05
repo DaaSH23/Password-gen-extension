@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Manrope:wght@700&family=Nunito:wght@700&family=Roboto+Mono:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">PASSWORD GENERATOR</div>
+        <div class="slider">
+            <div class="slider_value" id="slidevalue">
+                <span>10</span>
+            </div>
+            <div class="slider_bar">
+                <div class="value size">Size =</div>
+                <div class="value left">0</div>
+                <input type="range" min="0" max="40" value="10" id="sizeofpa" step="1">
+                <div class="value right">40</div>
+            </div>
+        </div>
+        <div class="ticks">
+            <div class="custom">Customize = </div>
+            <div class="upp"><label><input type="checkbox" value="upper" id="up" checked>Uppercase</label></div>
+            <div class="loo"><label><input type="checkbox" value="lower" id="lo" checked>Lowercase</label></div>
+            <div class="numm"><label><input type="checkbox" value="num" id="nu" checked>Numbers</label></div>
+            <div class="spp"><label><input type="checkbox" value="spch" id="sp" checked>Special Charecters</label></div>
+        </div>
+        <div class="passa" id="pass">
+            <p>
+
+            </p>
+        </div>
+
+        <button id="getpass" class="rf">
+            CHANGE
+        </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

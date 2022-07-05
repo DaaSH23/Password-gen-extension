@@ -1,0 +1,29 @@
+{
+    "name": "Password Generator",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "loho.png"
+    },
+    "permissions": ["activeTab",
+        "storage",
+        "scripting"
+    ],
+
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["index.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "index.js",
+            "loho.png"
+        ],
+        "matches": ["*://*/*"]
+    }],
+    "icons": {
+        "128": "loho.png"
+    },
+
+    "manifest_version": 3
+}
